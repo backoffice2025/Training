@@ -1,0 +1,160 @@
+/* App.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #3a3a3a, #222222);
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .app {
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #f39c12;
+  }
+  
+  .input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e67e22;
+  }
+
+  .category-container {
+    display: grid;
+    grid-template-rows: repeat; /* Responsive grid */
+    gap: 20px; /* Adds space between each box */
+    width: 100%; /* Ensures the container takes 100% width */
+    padding: 10px; /* Adds padding around the container */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    height: auto;
+   
+  }
+  
+  .category {
+    text-transform: uppercase;
+    background-color: #ff0000;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+  }
+  
+  .category:hover {
+    background-color: #b66134;
+    transform: scale(1.05);
+  }
+  
+  .exit-button {
+    margin-top: 20px;
+    background-color: #e74c3c;
+  }
+  
+  .exit-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .login-screen, .category-screen {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .category-container {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  }
+  /* Add to your App.css */
+.category-selection {
+  padding: 2rem;
+  text-align: center;
+}
+
+.category-selection h2 {
+  color: #fff;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.category-buttons {
+  display: grid;
+  grid-template-rows: repeat;
+  gap: 1rem;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.category-buttons button {
+  background-color: #ff0000;
+  color: #000;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.category-buttons button:hover {
+  background-color: #cc0000;
+  color: #fff;
+}
+
+.logout-btn {
+  background-color: #c3c3b8 !important;
+  color: #000000 !important;
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+}
+
+.logout-btn:hover {
+  background-color: #555 !important;
+}

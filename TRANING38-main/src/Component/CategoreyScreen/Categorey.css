@@ -1,0 +1,132 @@
+/* Base Styles */
+.category-screen {
+  min-height: 100vh;
+  background-color: whitesmoke;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  filter: drop-shadow(0 0 5px rgba(175, 104, 104, 0.5));
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #000000;
+}
+
+.header-number {
+  color: #ff0000;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+/* Category Grid */
+.category-grid {
+  display: grid;
+  grid-template-rows: repeat;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+.category-card {
+  background-color: #111;
+  border: 2px solid #ff0000;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.category-card:hover {
+  background-color: #ff0000;
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #ff0000;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.logout-btn:hover {
+  background-color: #cc0000;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+  
+  .header-number {
+    font-size: 2rem;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .category-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.2rem;
+  }
+  
+  .header-number {
+    font-size: 1.8rem;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-card {
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
+
+/* Toast Notifications */
